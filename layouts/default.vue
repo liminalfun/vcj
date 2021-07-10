@@ -2,11 +2,7 @@
   <div class="container">
     <CThemeProvider>
       <CColorModeProvider>
-        <CBox 
-          font-family="body" 
-          as="main"
-          bg="light"
-          color="dark" >
+        <CBox font-family="body" as="main" bg="$color-light" color="dark">
           <CReset />
           <Marquee />
           <Nuxt />
@@ -22,12 +18,12 @@ import {
   CColorModeProvider,
   CReset,
   CBox
-} from '@chakra-ui/vue'
-import Marquee from '~/components/Marquee.vue'
-import Nav from '~/components/Nav.vue'
+} from "@chakra-ui/vue";
+import Marquee from "~/components/Marquee.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     CThemeProvider,
     CColorModeProvider,
@@ -36,5 +32,11 @@ export default {
     Marquee,
     Nav
   }
-}
+};
 </script>
+
+<style lang="scss">
+body,
+html {
+}
+</style>

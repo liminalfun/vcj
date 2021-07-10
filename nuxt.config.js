@@ -19,10 +19,6 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/components',
@@ -43,6 +39,7 @@ export default {
     '@chakra-ui/nuxt',
     // https://go.nuxtjs.dev/emotion
     '@nuxtjs/emotion',
+    '@nuxtjs/style-resources',
     [
       'storyblok-nuxt',
       {
@@ -62,6 +59,17 @@ export default {
         accent: '#9AB108'
       }
     },
+  },
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    '~assets/sass/main.scss'
+  ],
+
+  styleResources: {
+    scss: [
+      '~assets/sass/helpers/_vars.scss',
+    ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

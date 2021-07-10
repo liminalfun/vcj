@@ -4,12 +4,13 @@
     justify="space-around"
     pos="sticky"
     bottom="0"
-    w="100%" 
+    w="100%"
     h="50px"
-    bg="inherit" >
-    <a href="/">Contact</a>
-    <a href="/">Shop</a>
-    <a href="/">Process</a>
+    bg="inherit"
+  >
+    <a class="nav-item" href="/">Contact</a>
+    <a class="nav-item" href="/">Shop</a>
+    <a class="nav-item" href="/">Process</a>
   </CFlex>
 </template>
 <script>
@@ -19,17 +20,21 @@ export default {
   components: {
     CFlex
   }
-}
+};
 </script>
-<style scoped>
-  nav {
-    position: sticky;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #DDDAD1;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+<style lang="scss" scoped>
+nav {
+  position: sticky;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: $color-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .nav-item {
+    font-family: $font-heading !important;
   }
+}
 </style>

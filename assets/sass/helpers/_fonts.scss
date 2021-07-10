@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "gulax";
+  font-style: normal;
+  font-weight: 400;
+  src: url("~assets/fonts/Gulax-Regular.woff2") format("woff2"),
+    url("~assets/fonts/Gulax-Regular.woff") format("woff"),
+    url("~assets/fonts/Gulax-Regular.eot");
+}
+
+@font-face {
+  font-family: "hk-grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url("~assets/fonts/HKGrotesk-Medium.woff2") format("woff2"),
+    url("~assets/fonts/HKGrotesk-Medium.woff") format("woff"),
+    url("~assets/fonts/HKGrotesk-Medium.eot");
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-style: italic;
+  font-weight: 500;
+  src: url("~assets/fonts/HKGrotesk-MediumItalic.woff2") format("woff2"),
+    url("~assets/fonts/HKGrotesk-MediumItalic.woff") format("woff"),
+    url("~assets/fonts/HKGrotesk-MediumItalic.eot");
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-style: bold;
+  font-weight: 600;
+  src: url("~assets/fonts/HKGrotesk-SemiBold.woff2") format("woff2"),
+    url("~assets/fonts/HKGrotesk-SemiBold.woff") format("woff"),
+    url("~assets/fonts/HKGrotesk-SemiBold.eot");
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  font-style: light;
+  font-weight: 400;
+  src: url("~assets/fonts/HKGrotesk-Regular.woff2") format("woff2"),
+    url("~assets/fonts/HKGrotesk-Regular.woff") format("woff"),
+    url("~assets/fonts/HKGrotesk-Regular.eot");
+}

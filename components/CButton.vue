@@ -1,9 +1,8 @@
 <template>
   <div v-editable="blok">
-    <c-pseudo-box 
+    <c-pseudo-box
       as="a"
-      href=blok.link
-      fontWeight="semibold"
+      href="blok.link"
       textAlign="center"
       d="block"
       w="fit-content"
@@ -11,7 +10,7 @@
       px="4"
       rounded="md"
       m="auto"
-      :_hover="{ bg: 'mid'}"
+      :_hover="{ bg: 'mid' }"
       :_focus="{ bg: 'mid' }"
     >
       {{ blok.text }}
@@ -20,7 +19,7 @@
 </template>
 
 <script>
-import { CPseudoBox } from "@chakra-ui/vue"
+import { CPseudoBox } from "@chakra-ui/vue";
 export default {
   components: {
     CPseudoBox
@@ -31,5 +30,5 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
