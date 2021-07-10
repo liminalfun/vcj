@@ -1,18 +1,27 @@
 <template>
-  <ul
+  <CGrid
     v-editable="blok"
-    class="flex py-8 mb-6">
-    <li
+    template-columns="repeat(3, 1fr)"
+    gap="6">
+    <CBox
       :key="blok._uid"
       v-for="blok in blok.columns"
-      class="flex-auto px-6">
+      w="100%"
+      h="10"
+      bg="blue.300">
       <component :blok="blok" :is="blok.component" />
-    </li>
-  </ul>
+    </CBox>
+  </CGrid>
 </template>
  
 <script>
+import { CGrid, CGridItem } from '@chakra-ui/vue'
+
 export default {
+  components: {
+    CGrid,
+    CGridItem
+  },
   props: {
     blok: {
       type: Object,
