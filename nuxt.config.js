@@ -52,6 +52,18 @@ export default {
     ],
   ],
 
+  // Add extend the plugin options under the `chakra` key.
+  chakra: {
+    extendTheme: {
+      colors: {
+        light: '#DDDAD1',
+        dark: '#505342',
+        mid: '#7B8065',
+        accent: '#9AB108'
+      }
+    },
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

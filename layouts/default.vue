@@ -2,7 +2,11 @@
   <div class="container">
     <CThemeProvider>
       <CColorModeProvider>
-        <CBox font-family="body" as="main">
+        <CBox 
+          font-family="body" 
+          as="main"
+          bg="light"
+          color="dark" >
           <CReset />
           <Marquee />
           <Nuxt />
