@@ -4,8 +4,9 @@
       <CColorModeProvider>
         <CBox font-family="body" as="main">
           <CReset />
-          <Header />
+          <Marquee />
           <Nuxt />
+          <Nav />
         </CBox>
       </CColorModeProvider>
     </CThemeProvider>
@@ -18,7 +19,8 @@ import {
   CReset,
   CBox
 } from '@chakra-ui/vue'
-import Header from '~/components/Header.vue'
+import Marquee from '~/components/Marquee.vue'
+import Nav from '~/components/Nav.vue'
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
     CColorModeProvider,
     CReset,
     CBox,
-    Header
+    Marquee,
+    Nav
   }
 }
 </script>
