@@ -1,16 +1,16 @@
 <template>
   <CFlex
+    class="nav"
     align="center"
     justify="space-around"
-    pos="sticky"
+    pos="fixed"
     bottom="0"
     w="100%"
     h="50px"
-    bg="inherit"
   >
-    <a class="nav-item" href="/">Contact</a>
-    <a class="nav-item" href="/">Shop</a>
-    <a class="nav-item" href="/">Process</a>
+    <a class="nav-item" href="/process">Process</a>
+    <a class="nav-item" href="/shop">Shop</a>
+    <a class="nav-item" href="/contact">Contact</a>
   </CFlex>
 </template>
 <script>
@@ -23,18 +23,18 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-nav {
-  position: sticky;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  background-color: $color-light;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.nav {
+  background-color: $color-dark;
+  color: $color-light;
 
   .nav-item {
     font-family: $font-heading !important;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+      color: $color-accent;
+    }
   }
 }
 </style>

@@ -2,7 +2,13 @@
   <div class="container">
     <CThemeProvider>
       <CColorModeProvider>
-        <CBox font-family="body" as="main" bg="$color-light" color="dark">
+        <CBox
+          font-family="body"
+          as="main"
+          bg="$color-light"
+          color="dark"
+          mb="50px"
+        >
           <CReset />
           <Marquee />
           <Nuxt />
@@ -34,9 +40,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-body,
-html {
-}
-</style>
