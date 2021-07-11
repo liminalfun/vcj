@@ -7,7 +7,7 @@
           as="main"
           bg="$color-light"
           color="dark"
-          mb="50px"
+          mb="100px"
         >
           <CReset />
           <Marquee />
