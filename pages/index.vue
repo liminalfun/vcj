@@ -31,7 +31,7 @@ export default {
         starts_with: "shop/",
         version: "draft"
       });
-      context.store.commit("shop/setItems", shopRefRes.data.stories);
+      context.store.commit("shop/setProducts", shopRefRes.data.stories);
       context.store.commit("shop/setLoaded", "1");
     }
   },
