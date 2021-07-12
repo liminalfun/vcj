@@ -1,6 +1,5 @@
 <template>
   <div v-editable="blok">
-    <h2 class="pt-2 pl-6 text-lg text-gray-700 italic">{{ blok.title }}</h2>
     <ul class="flex py-6 mb-6">
       <li
         v-for="product in sortedCollection"
@@ -8,7 +7,7 @@
         class="flex-auto px-6"
         style="min-width: 33%"
       >
-        <article-teaser
+        <product-teaser
           v-if="product.content"
           :article-link="product.full_slug"
           :article-content="product.content"
@@ -32,11 +31,11 @@ export default {
   computed: {
     sortedCollection() {
       // Load reference data/content from store
-      const collection = this.$store.state.shop.shop.filter(product => {
-        return this.blok.shop.includes(article.uuid);
+      const collection = this.$store.state.shop.products.filter(product => {
+        return this.blok.shop.includes(product.uuid);
       });
 
-      // Enable the ordering of the article previews
+      // Enable the ordering of the product previews
       collection.sort((a, b) => {
         return this.blok.shop.indexOf(a.uuid) - this.blok.shop.indexOf(b.uuid);
       });

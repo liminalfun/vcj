@@ -27,8 +27,9 @@
     </div>
     <div class="product__information">
       <h1 class="product__headline">{{ blok.name }}</h1>
-      <div class="product__price">€ {{ blok.price }}</div>
+      <div class="product__price" v-if="blok.price">${{ blok.price }} CAD</div>
       <rich-text-renderer
+        v-if="blok.description"
         class="product__description"
         :document="blok.description"
       />

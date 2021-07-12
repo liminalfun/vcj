@@ -1,14 +1,15 @@
 <template>
-  <nuxt-link
-    :to="productLink"
-    class="article-teaser block py-4 px-6 border rounded border-gray-500"
-  >
-    <h2 class="pt-2 pb-4 text-2xl font-bold">
-      {{ productContent.name }}
-    </h2>
-    <p class="pb-6 leading-relaxed">
-      {{ productContent.price }}
-    </p>
+  <nuxt-link :to="productLink" class="product-teaser">
+    <div class="product-images">
+      <img
+        v-for="image in productContent.images"
+        :key="image.filename"
+        :src="image.filename"
+      />
+      <h4 class="product-name">
+        {{ productContent.name }}
+      </h4>
+    </div>
   </nuxt-link>
 </template>
 

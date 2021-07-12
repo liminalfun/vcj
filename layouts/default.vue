@@ -9,7 +9,6 @@
           color="dark"
           mb="100px"
         >
-          <CReset />
           <Marquee />
           <Nuxt />
           <Nav />

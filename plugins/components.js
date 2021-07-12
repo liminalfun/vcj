@@ -12,6 +12,7 @@ import CButton from "~/components/CButton.vue";
 import Product from "~/components/Product.vue";
 import ProductTeaser from "~/components/ProductTeaser.vue";
 import Collection from "~/components/Collection.vue";
+import Heading from "~/components/Heading.vue";
 
 Vue.component("page", Page);
 Vue.component("teaser", Teaser);
@@ -26,3 +27,4 @@ Vue.component("cbutton", CButton);
 Vue.component("blok-product", Product);
 Vue.component("collection", Collection);
 Vue.component("product-teaser", ProductTeaser);
+Vue.component("heading", Heading);
