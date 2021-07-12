@@ -32,6 +32,7 @@
         class="product__description"
         :document="blok.description"
       />
+      <a :href="blok.link.url" class="btn">Buy Now </a>
     </div>
   </div>
 </template>

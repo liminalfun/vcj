@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  background-color: $color-accent;
+  color: $color-dark;
+  transition: all 0.3s;
+  &:hover {
+    background-color: lighten($color-accent, 5%);
+  }
+}
