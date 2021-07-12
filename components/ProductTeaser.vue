@@ -7,7 +7,7 @@
       {{ productContent.name }}
     </h2>
     <p class="pb-6 leading-relaxed">
-      {{ productContent.intro }}
+      {{ productContent.price }}
     </p>
   </nuxt-link>
 </template>
