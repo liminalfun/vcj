@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@chakra-ui/nuxt": "^0.3.3",
+    "@chakra-ui/nuxt": "^0.4.1",
     "@inniti/vue-horizontal-scroller": "^1.1.1",
     "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
     "@nuxtjs/emotion": "^0.1.0",
