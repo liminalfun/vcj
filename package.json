@@ -27,7 +27,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.0.5",
     "fibers": "^5.0.0",
-    "jest": "^27.0.5",
+    "jest": "^29.0.2",
     "sass": "^1.35.2",
     "sass-loader": "10",
     "stripe": "^8.161.0",
